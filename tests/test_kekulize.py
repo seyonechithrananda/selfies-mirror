@@ -13,7 +13,8 @@ test_sets = [
     ('test_sets/51K_NonFullerene.txt', 'smiles'),
     ('test_sets/250k_ZINC.txt', 'smiles'),
     ('test_sets/8k_Tox21.txt', 'smiles'),
-    ('test_sets/93k_PubChem_MUV_bioassay.txt', 'smiles')
+    ('test_sets/93k_PubChem_MUV_bioassay.txt', 'smiles'),
+    ('test_sets/version.txt', 'isosmiles')
 ]  # add if desired ('22M_eMolecule.smi', 'isosmiles')
 
 @pytest.mark.parametrize("test_path, column_name", test_sets)
