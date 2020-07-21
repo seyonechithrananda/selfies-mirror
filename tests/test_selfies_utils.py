@@ -16,7 +16,7 @@ def test_cases():
 
 @pytest.fixture()
 def test_cases_alphabet():
-    return {'.', '[C]', '[nop]', '[epsilon]'}
+    return {'[C]', '[nop]', '[epsilon]'}
 
 
 def test_len_selfies(test_cases):
@@ -25,8 +25,8 @@ def test_len_selfies(test_cases):
 
 
 def test_split_selfies(test_cases):
-    for s, (_, chars) in test_cases.items():
-        assert list(sf.split_selfies(s)) == chars
+    for s, (_, symbols) in test_cases.items():
+        assert list(sf.split_selfies(s)) == symbols
 
 
 def test_get_alphabet_from_selfies(test_cases, test_cases_alphabet):
